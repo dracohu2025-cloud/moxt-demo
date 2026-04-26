@@ -1,7 +1,9 @@
 import { defineConfig } from 'vitepress'
 
+const base = process.env.VERCEL ? '/' : '/moxt-demo/'
+
 export default defineConfig({
-  base: '/moxt-demo/',
+  base,
   title: 'Moxt 帮助中心',
   description: 'Moxt — AI 原生工作空间使用教程',
   lang: 'zh-CN',

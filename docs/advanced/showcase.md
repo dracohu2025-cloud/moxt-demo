@@ -10,9 +10,9 @@
 
 智能客服对话机器人，自动理解用户问题并给出解答。
 
-<iframe src="/moxt-demo/showcase/ai-customer-service.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+<iframe src="../showcase/ai-customer-service.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
 
-<a href="/moxt-demo/showcase/ai-customer-service.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+<a href="../showcase/ai-customer-service.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
 
 ---
 
@@ -20,9 +20,9 @@
 
 AI 驱动的客户线索挖掘引擎，自动筛选和评分潜在客户。
 
-<iframe src="/moxt-demo/showcase/ai-prospecting.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+<iframe src="../showcase/ai-prospecting.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
 
-<a href="/moxt-demo/showcase/ai-prospecting.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+<a href="../showcase/ai-prospecting.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
 
 ---
 
@@ -30,9 +30,9 @@ AI 驱动的客户线索挖掘引擎，自动筛选和评分潜在客户。
 
 内容日历看板，可视化管理发布计划和内容排期。
 
-<iframe src="/moxt-demo/showcase/content-calendar.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+<iframe src="../showcase/content-calendar.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
 
-<a href="/moxt-demo/showcase/content-calendar.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+<a href="../showcase/content-calendar.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
 
 ---
 
@@ -40,9 +40,9 @@ AI 驱动的客户线索挖掘引擎，自动筛选和评分潜在客户。
 
 翻页式融资演示文稿，支持键盘翻页和全屏播放。
 
-<iframe src="/moxt-demo/showcase/deck.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+<iframe src="../showcase/deck.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
 
-<a href="/moxt-demo/showcase/deck.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+<a href="../showcase/deck.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
 
 ---
 
@@ -50,9 +50,9 @@ AI 驱动的客户线索挖掘引擎，自动筛选和评分潜在客户。
 
 证据关联地图，将散落的信息线索可视化为节点网络。
 
-<iframe src="/moxt-demo/showcase/evidence-map.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+<iframe src="../showcase/evidence-map.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
 
-<a href="/moxt-demo/showcase/evidence-map.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+<a href="../showcase/evidence-map.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
 
 ---
 
@@ -60,9 +60,9 @@ AI 驱动的客户线索挖掘引擎，自动筛选和评分潜在客户。
 
 市场竞争格局地图，按维度定位各个玩家的位置。
 
-<iframe src="/moxt-demo/showcase/market-map.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+<iframe src="../showcase/market-map.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
 
-<a href="/moxt-demo/showcase/market-map.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+<a href="../showcase/market-map.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
 
 ---
 
@@ -70,9 +70,9 @@ AI 驱动的客户线索挖掘引擎，自动筛选和评分潜在客户。
 
 月度客户报告，包含关键指标、趋势图表和行动建议。
 
-<iframe src="/moxt-demo/showcase/monthly-report.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+<iframe src="../showcase/monthly-report.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
 
-<a href="/moxt-demo/showcase/monthly-report.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+<a href="../showcase/monthly-report.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
 
 ---
 
@@ -80,9 +80,9 @@ AI 驱动的客户线索挖掘引擎，自动筛选和评分潜在客户。
 
 员工入职看板，追踪每个新人的入职进度和待完成事项。
 
-<iframe src="/moxt-demo/showcase/onboarding-board.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+<iframe src="../showcase/onboarding-board.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
 
-<a href="/moxt-demo/showcase/onboarding-board.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+<a href="../showcase/onboarding-board.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
 
 ---
 
@@ -90,9 +90,9 @@ AI 驱动的客户线索挖掘引擎，自动筛选和评分潜在客户。
 
 Google 广告模拟器，体验从搜索到点击的完整广告投放效果。
 
-<iframe src="/moxt-demo/showcase/google-ad-simulator.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+<iframe src="../showcase/google-ad-simulator.html" width="100%" height="600" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
 
-<a href="/moxt-demo/showcase/google-ad-simulator.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+<a href="../showcase/google-ad-simulator.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
 
 ---
 

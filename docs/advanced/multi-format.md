@@ -102,9 +102,9 @@ Microsoft AI Economy Institute (2025). *AI Economic Impact H2 2025*
 
 同一份数据，用地图形式呈现全球各国的 AI 采用率。颜色越深，渗透率越高。点击国家可以查看详情。
 
-<iframe src="/moxt-demo/multi-format/heatmap.html" width="100%" height="650" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+<iframe src="../multi-format/heatmap.html" width="100%" height="650" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
 
-<a href="/moxt-demo/multi-format/heatmap.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+<a href="../multi-format/heatmap.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
 
 ---
 
@@ -112,9 +112,9 @@ Microsoft AI Economy Institute (2025). *AI Economic Impact H2 2025*
 
 适合有节奏的汇报场景。同样的数据，按叙事逻辑逐步揭示，像 PPT 一样翻页浏览。
 
-<iframe src="/moxt-demo/multi-format/slide-report.html" width="100%" height="650" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+<iframe src="../multi-format/slide-report.html" width="100%" height="650" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
 
-<a href="/moxt-demo/multi-format/slide-report.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+<a href="../multi-format/slide-report.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
 
 ---
 
@@ -122,9 +122,9 @@ Microsoft AI Economy Institute (2025). *AI Economic Impact H2 2025*
 
 自由探索多维数据。支持筛选、切换视图、缩放图表——适合需要深入分析的场景。
 
-<iframe src="/moxt-demo/multi-format/dashboard.html" width="100%" height="650" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+<iframe src="../multi-format/dashboard.html" width="100%" height="650" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
 
-<a href="/moxt-demo/multi-format/dashboard.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+<a href="../multi-format/dashboard.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
 
 ---
 
