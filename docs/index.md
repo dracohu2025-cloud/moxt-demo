@@ -1,0 +1,47 @@
+---
+layout: home
+
+hero:
+  name: "Moxt"
+  text: "AI 原生工作空间"
+  tagline: 人与 AI 同事，在同一个工作空间里协作。
+  image:
+    src: https://static.moxtcontent.com/public/resource/ai/gen/936b24cb-6f63-40d3-8f93-9443433a8057.png
+    alt: Moxt
+  actions:
+    - theme: brand
+      text: 快速开始
+      link: /guide/momo
+    - theme: alt
+      text: 产品理念
+      link: /philosophy
+    - theme: alt
+      text: 访问 Moxt
+      link: https://moxt.ai
+
+features:
+  - icon: 💬
+    title: momo — 你的专属 AI 助手
+    details: 完全了解你的业务上下文，阅读你所有文档，记住每一次决策。越用越懂你。
+    link: /guide/momo
+  - icon: 🤖
+    title: AI 同事 — 给它角色，让它自主工作
+    details: 创建专职 AI 同事，设定目标和规则，让它定时执行、主动响应、持续沉淀。
+    link: /guide/ai-teammates
+  - icon: 🔗
+    title: 连接一切 — Slack、GitHub、API、MCP
+    details: 接入你已有的工具栈，AI 同事在你的工作流里直接干活。
+    link: /setup/integrations
+  - icon: 📊
+    title: 可视化一切 — 告诉 momo 你想看到什么
+    details: 交互式看板、热力图、翻页报告、演示文稿——一句话生成，无需写代码。
+    link: /advanced/multi-format
+  - icon: 🧠
+    title: Skill — 把思维模型沉淀为能力
+    details: 你的标准、偏好、工作方式，通过 Skill 放大成团队的标准化输出。
+    link: /advanced/skills
+  - icon: 🔄
+    title: 熵减 — 让信息始终保持精简和真实
+    details: AI 同事主动整理过时文档、发现矛盾、维护知识库健康。
+    link: /advanced/entropy-officer
+---
