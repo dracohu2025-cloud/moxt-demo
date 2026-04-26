@@ -95,3 +95,37 @@ McKinsey & Company (2025). *The State of AI: Global Survey 2025*
 Stanford HAI (2025). *AI Index Report 2025*
 Microsoft AI Economy Institute (2025). *AI Economic Impact H2 2025*
 :::
+
+---
+
+## 世界热力图
+
+同一份数据，用地图形式呈现全球各国的 AI 采用率。颜色越深，渗透率越高。点击国家可以查看详情。
+
+<iframe src="/moxt-demo/multi-format/heatmap.html" width="100%" height="650" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+
+<a href="/moxt-demo/multi-format/heatmap.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+
+---
+
+## 翻页报告
+
+适合有节奏的汇报场景。同样的数据，按叙事逻辑逐步揭示，像 PPT 一样翻页浏览。
+
+<iframe src="/moxt-demo/multi-format/slide-report.html" width="100%" height="650" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+
+<a href="/moxt-demo/multi-format/slide-report.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+
+---
+
+## 交互式仪表盘
+
+自由探索多维数据。支持筛选、切换视图、缩放图表——适合需要深入分析的场景。
+
+<iframe src="/moxt-demo/multi-format/dashboard.html" width="100%" height="650" style="border: 1px solid var(--vp-c-divider); border-radius: 12px; margin: 16px 0;"></iframe>
+
+<a href="/moxt-demo/multi-format/dashboard.html" target="_blank" style="display: inline-block; margin-bottom: 32px; color: var(--vp-c-brand-1);">↗ 全屏查看</a>
+
+---
+
+以上四种形式——文字报告、热力地图、翻页报告、交互看板——来自完全相同的一份数据。你不需要重新整理素材，只需要告诉 momo 你想要什么形式。

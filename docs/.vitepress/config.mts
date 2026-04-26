@@ -53,6 +53,7 @@ export default defineConfig({
           { text: '把思维模型变成 Skill', link: '/advanced/skills' },
           { text: '自主性 · 放手到什么程度', link: '/advanced/autonomy' },
           { text: '一种信息多种表达', link: '/advanced/multi-format' },
+          { text: '可视化一切', link: '/advanced/showcase' },
         ]
       },
       {
