@@ -4,3 +4,6 @@ docs/.vitepress/dist
 /.vitepress/
 .DS_Store
 *.log
+.next
+out
+node_modules
