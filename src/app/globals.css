@@ -162,6 +162,172 @@ body {
   background-clip: text;
 }
 
+/* MDX Prose Typography */
+.prose-moxt {
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+  max-width: 48rem;
+}
+
+.prose-moxt h1 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-top: 0;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.prose-moxt h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.prose-moxt h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-moxt h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-moxt p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.prose-moxt a {
+  color: var(--color-primary-500);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.prose-moxt a:hover {
+  color: var(--color-primary-400);
+  text-decoration: underline;
+}
+
+.prose-moxt strong {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.prose-moxt ul, .prose-moxt ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.prose-moxt li {
+  margin-bottom: 0.25rem;
+}
+
+.prose-moxt li::marker {
+  color: var(--color-text-muted);
+}
+
+.prose-moxt blockquote {
+  border-left: 3px solid var(--color-primary-500);
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  color: var(--color-text-tertiary);
+  background: rgba(41,193,106,0.04);
+  border-radius: 0 8px 8px 0;
+}
+
+.prose-moxt blockquote p {
+  margin: 0;
+}
+
+.prose-moxt code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  color: var(--color-primary-400);
+  background: rgba(41,193,106,0.1);
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+}
+
+.prose-moxt pre {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: var(--color-bg-elevated);
+  border: 1px solid rgba(255,255,255,0.06);
+  overflow-x: auto;
+}
+
+.prose-moxt pre code {
+  background: none;
+  padding: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.prose-moxt table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.prose-moxt th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  background: var(--color-bg-surface);
+  border-bottom: 2px solid rgba(255,255,255,0.08);
+}
+
+.prose-moxt td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.prose-moxt tr:hover td {
+  background: rgba(255,255,255,0.02);
+}
+
+.prose-moxt hr {
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.06);
+  margin: 2rem 0;
+}
+
+.prose-moxt img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+.prose-moxt kbd {
+  display: inline-block;
+  padding: 0.15em 0.4em;
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--color-text-primary);
+  background: var(--color-bg-surface);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
