@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/moxt-demo/',
   title: 'Moxt 帮助中心',
   description: 'Moxt — AI 原生工作空间使用教程',
   lang: 'zh-CN',
