@@ -41,8 +41,10 @@ export default function FeatureCard({
       onMouseLeave={handleMouseLeave}
       className={`feature-card group relative block rounded-2xl p-8 transition-all duration-300 ${className}`}
       style={{
-        background: "var(--color-bg-surface)",
-        border: "1px solid rgba(255,255,255,0.06)",
+        background: "rgba(17, 24, 39, 0.6)",
+        backdropFilter: "blur(16px) saturate(180%)",
+        WebkitBackdropFilter: "blur(16px) saturate(180%)",
+        border: "1px solid rgba(255,255,255,0.08)",
         transformStyle: "preserve-3d",
       }}
     >

@@ -12,6 +12,13 @@ import {
   RefreshCw,
 } from "lucide-react";
 import FeatureCard from "./FeatureCard";
+import {
+  FloatingOrbs,
+  PerspectiveGrid,
+  LightStreaks,
+  NoiseTexture,
+  GlowDivider,
+} from "./SectionBackground";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -104,10 +111,33 @@ export default function FeaturesSection() {
     <section
       id="features"
       ref={sectionRef}
-      className="relative py-24 sm:py-32 px-4"
-      style={{ background: "var(--gradient-section)" }}
+      className="relative py-24 sm:py-32 px-4 overflow-hidden"
     >
-      <div className="mx-auto max-w-7xl">
+      {/* Immersive background layers */}
+      <GlowDivider position="top" />
+      <FloatingOrbs
+        count={4}
+        colors={[
+          "rgba(41,193,106,0.12)",
+          "rgba(14,165,233,0.10)",
+          "rgba(41,193,106,0.08)",
+          "rgba(14,165,233,0.06)",
+        ]}
+      />
+      <PerspectiveGrid opacity={0.035} />
+      <LightStreaks count={3} />
+      <NoiseTexture opacity={0.025} />
+
+      {/* Top gradient fade from Hero */}
+      <div
+        className="absolute top-0 left-0 right-0 h-48 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(to bottom, var(--color-bg-base), transparent)",
+        }}
+      />
+
+      <div className="relative z-10 mx-auto max-w-7xl">
         <h2
           ref={titleRef}
           className="text-center text-[clamp(1.625rem,4vw,2.25rem)] font-bold text-[var(--color-text-primary)] mb-4"
@@ -120,7 +150,7 @@ export default function FeaturesSection() {
 
         <div
           ref={gridRef}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+          className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
         >
           {features.map((f) => (
             <FeatureCard
