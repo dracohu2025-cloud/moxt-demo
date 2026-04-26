@@ -13,10 +13,9 @@ import {
 } from "lucide-react";
 import FeatureCard from "./FeatureCard";
 import {
-  FloatingOrbs,
-  PerspectiveGrid,
-  LightStreaks,
-  NoiseTexture,
+  ParticleNetwork,
+  GradientMesh,
+  AnimatedGrid,
   GlowDivider,
 } from "./SectionBackground";
 
@@ -74,33 +73,52 @@ export default function FeaturesSection() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(titleRef.current, {
-        scrollTrigger: {
-          trigger: titleRef.current,
-          start: "top 85%",
-          toggleActions: "play none none none",
-        },
-        opacity: 0,
-        y: 40,
-        duration: 0.8,
-        ease: "power3.out",
-      });
+      // Use fromTo instead of from to ensure end state is always applied
+      gsap.fromTo(
+        titleRef.current,
+        { opacity: 0, y: 40 },
+        {
+          scrollTrigger: {
+            trigger: titleRef.current,
+            start: "top 90%",
+            toggleActions: "play none none none",
+          },
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+        }
+      );
 
       const cards = gridRef.current?.querySelectorAll(".feature-card");
       if (cards) {
-        gsap.from(cards, {
-          scrollTrigger: {
-            trigger: gridRef.current,
-            start: "top 80%",
-            toggleActions: "play none none none",
-          },
-          opacity: 0,
-          y: 50,
-          scale: 0.95,
-          duration: 0.7,
-          stagger: 0.1,
-          ease: "back.out(1.7)",
-        });
+        gsap.fromTo(
+          cards,
+          { opacity: 0, y: 50, scale: 0.95 },
+          {
+            scrollTrigger: {
+              trigger: gridRef.current,
+              start: "top 90%",
+              toggleActions: "play none none none",
+            },
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 0.7,
+            stagger: 0.1,
+            ease: "back.out(1.7)",
+          }
+        );
+
+        // Safety fallback: ensure cards are visible after 2s no matter what
+        setTimeout(() => {
+          cards.forEach((card) => {
+            const el = card as HTMLElement;
+            if (el.style.opacity === "0" || getComputedStyle(el).opacity === "0") {
+              gsap.to(el, { opacity: 1, y: 0, scale: 1, duration: 0.5 });
+            }
+          });
+        }, 2000);
       }
     }, sectionRef);
 
@@ -113,30 +131,33 @@ export default function FeaturesSection() {
       ref={sectionRef}
       className="relative py-24 sm:py-32 px-4 overflow-hidden"
     >
-      {/* Immersive background layers */}
+      {/* === Immersive background === */}
       <GlowDivider position="top" />
-      <FloatingOrbs
-        count={4}
-        colors={[
-          "rgba(41,193,106,0.12)",
-          "rgba(14,165,233,0.10)",
-          "rgba(41,193,106,0.08)",
-          "rgba(14,165,233,0.06)",
-        ]}
-      />
-      <PerspectiveGrid opacity={0.035} />
-      <LightStreaks count={3} />
-      <NoiseTexture opacity={0.025} />
 
-      {/* Top gradient fade from Hero */}
+      {/* Gradient mesh — strong glowing orbs */}
+      <GradientMesh variant="green" />
+
+      {/* Canvas particle network */}
+      <ParticleNetwork
+        particleCount={50}
+        connectionDistance={130}
+        speed={0.25}
+      />
+
+      {/* Grid overlay for tech feel */}
+      <AnimatedGrid />
+
+      {/* Top fade from Hero section */}
       <div
-        className="absolute top-0 left-0 right-0 h-48 pointer-events-none"
+        className="absolute top-0 left-0 right-0 h-32 pointer-events-none"
         style={{
-          background:
-            "linear-gradient(to bottom, var(--color-bg-base), transparent)",
+          background: "linear-gradient(to bottom, var(--color-bg-base), transparent)",
         }}
       />
 
+      <GlowDivider position="bottom" />
+
+      {/* === Content === */}
       <div className="relative z-10 mx-auto max-w-7xl">
         <h2
           ref={titleRef}

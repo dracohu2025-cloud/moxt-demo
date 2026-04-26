@@ -6,10 +6,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Maximize2, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  FloatingOrbs,
-  LightStreaks,
-  NoiseTexture,
+  ParticleNetwork,
+  GradientMesh,
   GlowDivider,
+  FloatingRings,
 } from "./SectionBackground";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -129,18 +129,32 @@ export default function ShowcaseSection() {
     const ctx = gsap.context(() => {
       const cards = sectionRef.current?.querySelectorAll(".showcase-card");
       if (cards) {
-        gsap.from(cards, {
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 80%",
-            toggleActions: "play none none none",
-          },
-          opacity: 0,
-          y: 40,
-          duration: 0.7,
-          stagger: 0.1,
-          ease: "back.out(1.7)",
-        });
+        gsap.fromTo(
+          cards,
+          { opacity: 0, y: 40 },
+          {
+            scrollTrigger: {
+              trigger: sectionRef.current,
+              start: "top 90%",
+              toggleActions: "play none none none",
+            },
+            opacity: 1,
+            y: 0,
+            duration: 0.7,
+            stagger: 0.1,
+            ease: "back.out(1.7)",
+          }
+        );
+
+        // Safety fallback
+        setTimeout(() => {
+          cards.forEach((card) => {
+            const el = card as HTMLElement;
+            if (getComputedStyle(el).opacity === "0") {
+              gsap.to(el, { opacity: 1, y: 0, duration: 0.5 });
+            }
+          });
+        }, 2000);
       }
     }, sectionRef);
 
@@ -159,28 +173,27 @@ export default function ShowcaseSection() {
 
   return (
     <section ref={sectionRef} className="relative py-24 sm:py-32 px-4 overflow-hidden">
-      {/* Immersive background layers */}
+      {/* === Immersive background === */}
       <GlowDivider position="top" />
-      <FloatingOrbs
-        count={3}
-        colors={[
-          "rgba(14,165,233,0.12)",
-          "rgba(41,193,106,0.08)",
-          "rgba(14,165,233,0.06)",
-        ]}
-      />
-      <LightStreaks count={2} />
-      <NoiseTexture opacity={0.02} />
 
-      {/* Radial accent glow */}
-      <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full pointer-events-none animate-pulse-glow"
-        style={{
-          background:
-            "radial-gradient(circle, rgba(14,165,233,0.06) 0%, transparent 60%)",
-        }}
+      {/* Blue-tinted gradient mesh */}
+      <GradientMesh variant="blue" />
+
+      {/* Canvas particle network — blue accent */}
+      <ParticleNetwork
+        particleCount={40}
+        connectionDistance={100}
+        color="14,165,233"
+        secondaryColor="41,193,106"
+        speed={0.2}
       />
 
+      {/* Floating ring decorations */}
+      <FloatingRings count={4} />
+
+      <GlowDivider position="bottom" />
+
+      {/* === Content === */}
       <div className="relative z-10 mx-auto max-w-7xl">
         <h2 className="text-center text-[clamp(1.625rem,4vw,2.25rem)] font-bold text-[var(--color-text-primary)] mb-4">
           看看 momo 能做什么
